@@ -12,7 +12,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldModule} from '@angular/material/form-field' ;
 import {MatInputModule} from '@angular/material/input' ;
-import {FormsModule} from '@angular/forms' ;
+import {FormsModule} from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component' ;
 
 
 
@@ -22,7 +23,8 @@ import {FormsModule} from '@angular/forms' ;
     NavBarComponent,
     HomeComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

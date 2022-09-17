@@ -1,39 +1,32 @@
-<div class="bootstrap-wrapper">
-    <div class="container text-center mt" >
- <div class="row ">
-    <div class="col-md-6 offset-md-3"  >
-        <div class="container text-center">
-            <img class="img-fluid" src="assets/login.png" style="width:120px ;" alt="">
-        </div>
-        <h1 class="text-center">Login</h1>
-       <form name="form" (ngSubmit)=" onsubmit(f)" #f="ngForm">
-        <div class="form-group">
-            <label for="email">Email :</label>
-           <input type="email" id="email" ngModel #email="ngModel"  name="email"
-              class="form-control" required />
-<div class="container">
-    <span style="color: red; " *ngIf="!email.valid && email.touched">**email field cant be empty</span>
-  
-</div>
-              </div>
-            <div class="form-group mt">
-                <label for="password">Password :</label>
-               <input type="password" id="password" ngModel #password="ngModel"  name="password"
-                  class="form-control" required pattern="^[a-zA-Z0-9]{8,16}$" />
-                 <div class="container" *ngIf="!password.valid && password.touched">
-                    <span *ngIf="password.errors?.['required']" style="color: red; ">**password field cant be empty</span>
-                    <span *ngIf="password.errors?.['pattern']" style="color: red; ">**password should be between 8-16 character && contain alphanumerics</span>
-                    
-                 </div>
-                </div>
-          <div class="container mt">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-            <button type="submit" mat-raised-button color="primary" class="mt" >Login</button>
-            <button type="reset" mat-raised-button color="accent" class="mt" style="margin-left: 10px;" >Reset</button>
+    <title>Signin Template for Bootstrap</title>
 
-          </div>
-        </form>  
-    </div>
- </div>
-</div>
-</div>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+   
+
+   
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="assets/login.png" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+ 
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+   
+    </form>
+  </body>
+</html>
