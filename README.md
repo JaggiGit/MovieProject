@@ -8,7 +8,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Components 
 
-1-To login to the application firstly open the jwt authentication on (http://localhost:8080) .You will get a dummy username and password which can be used to login to the application. This is a backend logic written using java interface.
+1-To login to the application firstly open the jwt authentication on (http://localhost:8080) .You will get a dummy username and password which can be used to login to the application. This is a backend logic written using java interface.to directly check login you can use default username and password as  below 
+username="user23@gmail.com"
+password:"user23123"
 
 2-open the angular in vs code and click on login .Enter the username and password received from above server host. This is frontend logic for the login using angular material and services. http://localhost:4200
 
