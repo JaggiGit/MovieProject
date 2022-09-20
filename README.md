@@ -6,22 +6,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Components 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1-To login to the application firstly open the jwt authentication on localhost:8080 .You will get a dummy username and password which can be used to login to the application. This is a backend logic written using java interface.
 
-## Build
+2-open the angular in vs code and click on login .Enter the username and password received from above server host. This is frontend logic for the login using angular material and services
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3-Correct user name and password will login you to the movie-search page which can be used to search the movie.
 
-## Running unit tests
+4-Login is done via jwt authentication and is secure as spring boot security module is used to generate the jwt token.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5-angular frontend is connected to springboot backend via cross origin technology and both the app can run on diffrent ports comfotably.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6-User session is managed till the user logout 
